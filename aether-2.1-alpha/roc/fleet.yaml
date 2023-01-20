@@ -1,0 +1,12 @@
+name: aether-roc-umbrella
+defaultNamespace: aether-roc
+helm:
+  releaseName: aether-roc-umbrella
+  repo: https://charts.aetherproject.org
+  chart: aether-roc-umbrella
+  version: 2.1.32
+  valuesFiles:
+    - roc-values.yaml
+dependsOn:
+- name: atomix
+- name: onos-operator
